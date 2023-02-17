@@ -18,6 +18,7 @@
     <module>rnr-config-server</module>
     <module>rnr-api-gateway</module>
     <module>rnr-album-service</module>
+      <module>rnr-user-service</module>
   </modules>
 
   <name>rocknroll-microservices-v3</name>
