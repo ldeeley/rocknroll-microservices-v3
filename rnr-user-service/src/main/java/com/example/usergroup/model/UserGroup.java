@@ -3,7 +3,7 @@ package com.example.usergroup.model;
 import com.example.user.model.User;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 

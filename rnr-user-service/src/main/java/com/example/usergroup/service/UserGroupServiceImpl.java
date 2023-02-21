@@ -13,8 +13,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +59,7 @@ public class UserGroupServiceImpl implements UserGroupService{
     }
 
 
-    @Transactional(rollbackOn = SQLException.class)
+    @Transactional(rollbackFor = SQLException.class)
     @Override
     public void createUserGroup(APIUserGroupRequestDTO apiUserGroupRequestDTO) {
             UserGroup userGroup = UserGroup.builder()
